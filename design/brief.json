@@ -1,0 +1,130 @@
+{
+  "phase": "Working local application implemented; Hermes gateway connection deferred to VPS setup",
+  "latestMockup": "tavern-office-mockup-v4.png",
+  "visualPolishReference": {
+    "url": "https://www.instagram.com/reel/DeNVdk7oPYA/",
+    "observed": "Browser playback inspected: stylized 3D island/weather scene with soft materials and lighting, and changes between bright and dark weather/lighting states. Creator caption lists Blender and Three.js.",
+    "requestedDirection": "Use the reel as a reference for a softer, smoother and more polished 3D finish while preserving the approved-by-user requirements for fantasy guild rooms and the newly specified floor assignments.",
+    "implementationGoals": [
+      "Consistent rounded 3D models and coherent material styling",
+      "Soft warm lighting and restrained shadows",
+      "Eased camera orbit, zoom and floor-focus transitions",
+      "Time-based character movement with blended turns and walk/idle transitions",
+      "Subtle ambient motion such as water and lanterns",
+      "Validate smoothness in the actual interactive app on desktop and mobile; no frame-rate claim from static mockups"
+    ]
+  },
+  "floorPlan": [
+    {
+      "level": 2,
+      "label": "Floor 2 - Personal projects",
+      "projectNames": [
+        "TBA - ERP AI Project",
+        "Power Passion Ecommerce",
+        "Kaffee Area Mobile Apps",
+        "1Engage Hackaton Landing Page"
+      ],
+      "sharedSpaces": ["Personal knowledge archive", "Shared stair landing"],
+      "source": "User-defined personal-project floor"
+    },
+    {
+      "level": 1,
+      "label": "Floor 1 - Bithealth",
+      "projectNames": ["Bithealth"],
+      "sharedSpaces": [
+        "Bithealth worktables",
+        "Meeting nook",
+        "Company records alcove"
+      ],
+      "source": "User works at Bithealth and dedicates Floor 1 to that company"
+    },
+    {
+      "level": 0,
+      "label": "Ground - Entrance and recreation",
+      "projectNames": [],
+      "sharedSpaces": [
+        "Guild entrance",
+        "Reception and quest board",
+        "Captain's chamber",
+        "Bar",
+        "Billiards",
+        "Board games",
+        "Archery",
+        "Training ground",
+        "Fishing pond",
+        "Swimming pool"
+      ],
+      "source": "User-defined entrance and entertainment floor; captain's chamber placement is proposed"
+    },
+    {
+      "level": -1,
+      "label": "Basement - Coordination den",
+      "projectNames": [],
+      "sharedSpaces": [
+        "Shadowy coordination den",
+        "Map table",
+        "Coordinator desk"
+      ],
+      "source": "Preserves the earlier explicit basement-den request beneath the three newly specified main floors"
+    }
+  ],
+  "floorNavigation": "Whole-building open cutaway view and floor selector for All floors, Floor 2, Floor 1, Ground and Basement; connected staircase for character routes and Step inside.",
+  "roomArchitecture": "Adventure-game tavern and guild rooms throughout: oak timber frames, pale plaster, stone footings, planked floors, rounded open doorways, lanterns, banners, workbenches, scrolls and map tables.",
+  "proposedRoomThemes": {
+    "TBA - ERP AI Project": "Quartermaster's Hall: sage banners, supply cubbies and planning table",
+    "Power Passion Ecommerce": "Merchant's Workshop: coral banners, crates, brass scales and shop counter",
+    "Kaffee Area Mobile Apps": "Alchemist's Cafe: cream and caramel, coffee vessels, mugs and workbench",
+    "Bithealth": "Healer's Study: pale blue, herb pots, books and glass bottles",
+    "1Engage Hackaton Landing Page": "Bard's Atelier: lavender banners, sketch scrolls and presentation easel"
+  },
+  "sharedRoomThemes": {
+    "supervisor": "Captain's chamber with map desk beside the ground-floor entrance",
+    "knowledgeLibrary": "Personal guild archive on Floor 2, plus a distinct Bithealth records alcove on Floor 1; actual notes remain unimported",
+    "coordination": "Shadowy stone-and-timber strategist's den below the guild hall"
+  },
+  "videoReferenceDirection": "Preserve the video's clean compact pastel game geometry, readable doorways, visible basement, stairs and restrained controls. The user's later requirements expand this to three main guild floors plus basement. Original adventure-party characters replace the reference characters.",
+  "deployment": {
+    "initial": "Local development",
+    "later": "User-uploaded VPS deployment",
+    "integration": "Hermes gateway to be connected later"
+  },
+  "agentSlots": 3,
+  "profileMapping": "Deferred until VPS setup; names, roles, coordinator and project assignments configurable",
+  "proposedAgentArchetypes": ["warrior", "mage", "archer"],
+  "proposedSupervisorArchetype": "swordsman",
+  "additionalCharacterOption": "healer",
+  "projects": [
+    "TBA - ERP AI Project",
+    "Power Passion Ecommerce",
+    "Kaffee Area Mobile Apps",
+    "Bithealth",
+    "1Engage Hackaton Landing Page"
+  ],
+  "confirmedStyle": "Rounded toy-like 3D, cozy isometric tycoon office, pastel colors, warm light and plants",
+  "recreation": [
+    "archery",
+    "bar",
+    "training ground",
+    "games",
+    "fishing",
+    "swimming pool",
+    "billiards"
+  ],
+  "sourcePolicy": "Project names and the Bithealth-company versus personal-project categorization are user-provided. Detailed project context, documents, agent status and Hermes connection details remain unavailable. Decorative routines and room props never imply verified task activity or imported work.",
+  "requiredViews": [
+    "Isometric office with zoom, rotation and right-drag pan",
+    "Step inside with directional controls",
+    "Responsive mobile layout"
+  ],
+  "otherRequirements": [
+    "Clickable characters and rooms with context and available status",
+    "Supervisor office and routine",
+    "One room per real project",
+    "Knowledge library",
+    "Visible shadowy basement coordination den, brighter on selection",
+    "Optional lo-fi music and office sounds with clear mute controls",
+    "Doors and walking routes; work-facing reading, writing, chatting and breaks",
+    "Exact launch instructions and required running services after implementation"
+  ],
+  "renderer": "React Three Fiber with Three.js and Drei"
+}

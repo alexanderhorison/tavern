@@ -1,0 +1,6 @@
+services:
+  tavern:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "${TAVERN_BIND:-127.0.0.1}:${TAVERN_PORT:-8080}:80"
